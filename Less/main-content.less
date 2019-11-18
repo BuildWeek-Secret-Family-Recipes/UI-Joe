@@ -1,13 +1,19 @@
 .container{
     width: 800px;
     margin: 0 auto;
+    @media @mobile{
+       padding: 0 1%; 
+    }
 }
 .main-content {
     display: flex;
     justify-content: space-evenly;
     border-bottom: 4px solid #594236;
-    margin-left: 40px;
-  
+    @media @mobile{
+    flex-direction: column;
+    padding: 0 40px;
+    }
+   
   }
   .main-content .cookbook {
     padding: 60px 10px 20px;
@@ -61,9 +67,14 @@
   .bottom-content {
     display: flex;
     flex-direction: row;
-    
     text-align: center;
-  }
+    @media @mobile{
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-right: 80px;
+             }
+         } 
+  
   .bottom-content img {
     border-radius: 50px;
     font-size: 80%;
@@ -78,16 +89,27 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
-  }
+    @media @mobile{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    padding: 0 10px;
+         }
+     } 
+  
   .last-text {
     padding: 0 10px 0;
     width: 67.5rem;
     margin-bottom: 60px;
-  }
+    @media @mobile{
+        width: 450px;
+             }
+         } 
   .personal{
     border-top: 4px solid #594236; 
     margin-top: 20px;
   }
+ 
   .personal h2 {
     font-size: 1.25rem;
     font-weight: bold;

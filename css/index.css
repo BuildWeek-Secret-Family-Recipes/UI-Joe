@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
 }
 .container {
-  width: 900px;
+  width: 98%;
   margin: 0 auto;
 }
 h2 {
@@ -145,6 +145,17 @@ h2 {
   margin-bottom: 20px;
   background-color: #654F3B;
   padding: 15px 0 0;
+}
+@media (max-width: 500px) {
+  .header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+  }
+  .header nav a {
+    margin-bottom: 10px;
+  }
 }
 a {
   font-family: san-serif;
@@ -179,15 +190,34 @@ button:hover {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+.header img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .header img {
+    width: 500px;
+    height: 500px;
+  }
+}
 .container {
   width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1%;
+  }
 }
 .main-content {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 4px solid #594236;
-  margin-left: 40px;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    padding: 0 40px;
+  }
 }
 .main-content .cookbook {
   padding: 60px 10px 20px;
@@ -242,6 +272,13 @@ button:hover {
   flex-direction: row;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 80px;
+  }
+}
 .bottom-content img {
   border-radius: 50px;
   font-size: 80%;
@@ -257,10 +294,23 @@ button:hover {
   justify-content: space-between;
   margin-top: 40px;
 }
+@media (max-width: 500px) {
+  .final-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    padding: 0 10px;
+  }
+}
 .last-text {
   padding: 0 10px 0;
   width: 67.5rem;
   margin-bottom: 60px;
+}
+@media (max-width: 500px) {
+  .last-text {
+    width: 450px;
+  }
 }
 .personal {
   border-top: 4px solid #594236;
@@ -378,7 +428,7 @@ h3 {
 .footer-content nav {
   display: flex;
   justify-content: center;
-  background-color: #654F3B;
+  background-color: #654F38;
 }
 .footer-content a {
   font-family: san-serif;
@@ -395,4 +445,20 @@ h3 {
   text-align: center;
   margin-left: 100px;
   color: #EDDFB0;
+}
+@media (max-width: 500px) {
+  .footer-content nav {
+    background-color: transparent;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .footer-content nav a {
+    color: black;
+  }
+  .footer-content nav .copyright {
+    color: black;
+    margin-top: 30px;
+    margin-right: 90px;
+  }
 }
