@@ -130,8 +130,14 @@ table {
   box-sizing: border-box;
 }
 .container {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
 }
 h2 {
   font-size: 1.2rem;
@@ -139,25 +145,38 @@ h2 {
   margin-bottom: 20px;
   font-weight: bold;
 }
-.header nav {
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+    background-color: #9C976A;
+  }
+}
+.container .header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 20px;
   background-color: #654F3B;
   padding: 15px 0 0;
 }
 @media (max-width: 500px) {
-  .header nav {
+  .container .header nav {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     background-color: transparent;
+    padding: 0 60px 0;
+    margin-left: 40px;
   }
-  .header nav a {
+  .container .header nav a {
     margin-bottom: 10px;
   }
 }
-a {
+.container a {
   font-family: san-serif;
   font-size: 1.5rem;
   text-decoration: none;
@@ -165,38 +184,49 @@ a {
   color: #EDDFB0;
   margin-right: 40px;
 }
-a:hover {
-  color: #9C976A;
+.container a:hover {
+  color: #000000;
 }
-button {
+@media (max-width: 500px) {
+  .container a:hover {
+    color: #000000;
+  }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.container button {
   border-radius: 10px;
   width: 100px;
   height: 30px;
   font-size: 1.2rem;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 10px;
   background-color: #654F3B;
   border: 2px solid #EDDFB0;
   color: #EDDFB0;
 }
-button:hover {
+.container button:hover {
   color: #EDDFB0;
   background-color: #9C976A;
 }
-.header h1 {
+.container .header h1 {
   text-align: center;
   font-size: 2rem;
   color: black;
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.header img {
-  width: 50%;
-}
 @media (max-width: 500px) {
-  .header img {
-    width: 500px;
-    height: 500px;
+  .cooking {
+    margin-left: 20px;
   }
 }
 .container {
@@ -205,178 +235,227 @@ button:hover {
 }
 @media (max-width: 500px) {
   .container {
-    padding: 0 1%;
+    width: 100%;
+    padding: 0 40px;
   }
 }
-.main-content {
+.container .main-content {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 4px solid #594236;
 }
 @media (max-width: 500px) {
-  .main-content {
+  .container .main-content {
     flex-direction: column;
-    padding: 0 40px;
+    justify-content: flex-start;
+    width: 100%;
   }
 }
-.main-content .cookbook {
+.container .main-content .cookbook {
   padding: 60px 10px 20px;
   border: 0 10px solid #97a1a5;
   margin-right: 60px;
 }
-.main-content .top-text h2 {
+.container .main-content .top-text h2 {
   margin-top: 20px;
   margin: 20px;
   margin-right: 20px;
   font-size: 1.25rem;
   color: #4b719c;
 }
-.main-content .top-text p {
+.container .main-content .top-text p {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px;
-  margin-right: 20px;
+  margin: 0 20px;
+  margin-right: 40px;
   margin-top: 20px;
   color: #594236;
   font-weight: none;
-  width: 350px;
+  width: 400px;
 }
-.middle-content {
+@media (max-width: 500px) {
+  .container .main-content .top-text p {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.container .middle-content {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
   justify-content: space-evenly;
   border-bottom: 4px solid #594236;
 }
-.middle-text h2 {
+.container .middle-text h2 {
   margin-top: 20px;
   margin-right: 20px;
   font-size: 1.25rem;
   color: #4b719c;
 }
-.middle-text p {
+.container .middle-text p {
   margin-top: 20px;
   width: 800px;
 }
-.middle-content .shared-recipes {
+@media (max-width: 500px) {
+  .container .middle-text p {
+    width: 100%;
+    color: #594236;
+  }
+}
+.container .middle-content .shared-recipes {
   margin-right: 60px;
 }
-.shared-secrets h2 {
+@media (max-width: 500px) {
+  .container .middle-content .shared-recipes {
+    width: 98%;
+    padding: 0 15px;
+    margin-right: 40px;
+    justify-content: center;
+  }
+}
+.container .shared-secrets h2 {
   font-size: 1.25rem;
   color: #4b719c;
   margin: 20px;
   font-weight: bold;
 }
-.bottom-content {
+.container .bottom-content {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .bottom-content {
+  .container .bottom-content {
     flex-direction: column;
     margin-bottom: 20px;
     margin-right: 80px;
   }
 }
-.bottom-content img {
+.container .bottom-content img {
   border-radius: 50px;
   font-size: 80%;
   padding-bottom: 0.5rem;
   margin: 0 25px;
 }
-.bottom-content p {
+@media (max-width: 500px) {
+  .container .bottom-content img {
+    margin-top: 20px;
+  }
+}
+.container .bottom-content p {
   margin: 5px 20px;
 }
-.final-content {
+@media (max-width: 500px) {
+  .container .bottom-content a {
+    text-align: center;
+    margin-left: 40px;
+  }
+}
+.container .final-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 40px;
 }
 @media (max-width: 500px) {
-  .final-content {
+  .container .final-content {
     flex-direction: column;
     justify-content: space-evenly;
-    width: 200px;
     padding: 0 10px;
+    color: #594236;
   }
 }
-.last-text {
+.container .last-text {
   padding: 0 10px 0;
   width: 67.5rem;
   margin-bottom: 60px;
 }
 @media (max-width: 500px) {
-  .last-text {
-    width: 450px;
+  .container .last-text {
+    width: 100%;
+    margin-bottom: -5px;
   }
 }
-.personal {
+.container .personal {
   border-top: 4px solid #594236;
   margin-top: 20px;
 }
-.personal h2 {
+.container .personal h2 {
   font-size: 1.25rem;
   font-weight: bold;
   margin: 10px;
   margin-top: 20px;
   color: #4b719c;
 }
-.about-page {
+.container .about-page h1 {
   margin-top: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #4b719c;
-  margin-bottom: 10px;
-  padding: 40px;
-}
-.about-page h1 {
+  padding: 10px 40px;
   text-align: center;
-  margin-bottom: 20px;
 }
-.about-page p {
-  font-size: 1rem;
+.container .about-page p {
+  font-size: 1.25rem;
   color: #594236;
 }
-.myteam {
+.container .myteam {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
-.pic {
+.container .pic {
   margin-bottom: 40px;
-  margin: 40px;
+  margin: 10px;
 }
-.pic p {
+.container .pic img {
+  text-align: center;
+  margin-left: 80px;
+}
+.container .pic p {
   padding: 40px 0;
   color: #594236;
   font-weight: bold;
   width: 350px;
-  margin-right: 40px;
+  margin-left: 60px;
 }
-.pic h3 {
+.container .pic h3 {
   font-size: 2rem;
   color: #4b719c;
+  text-align: center;
 }
-.top-foods h2 {
+.container .pic p a {
+  color: #594236;
+}
+.container .shared-samples h1 {
+  font-size: 2rem;
+}
+.container .top-foods {
+  text-align: center;
+}
+.container .top-foods h2 {
   color: #4b719c;
+  margin-top: 20px;
+  font-size: 2rem;
 }
-.food-types a {
+.container .food-types a {
   color: #594236;
   font-size: 1rem;
 }
-.bottom-content a {
+.container .bottom-content a {
   margin-bottom: 20px;
   text-align: center;
 }
-.flip-card {
+.container .flip-card {
   background-color: transparent;
   width: 400px;
   height: 400px;
   perspective: 1000px;
-  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
-.flip-card-inner {
+.container .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -385,36 +464,36 @@ button:hover {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.flip-card:hover .flip-card-inner {
+.container .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-.flip-card-front,
-.flip-card-back {
+.container .flip-card-front,
+.container .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-.flip-card-front {
+.container .flip-card-front {
   background-color: #97a1a5;
   color: black;
 }
-.flip-card-back {
+.container .flip-card-back {
   background-color: #654F3B;
   color: #EDDFB0;
   transform: rotateY(180deg);
 }
-.flip-card-back h1,
-h3 {
+.container .flip-card-back h1,
+.container h3 {
   color: #EDDFB0;
   font-weight: bold;
   padding: 0 20px;
 }
-.flip-card-back p {
+.container .flip-card-back p {
   font-size: 0.9rem;
   padding: 20px;
 }
-.flip-card-back h1 {
+.container .flip-card-back h1 {
   font-size: 1.5rem;
 }
 .footer-content h4 {
@@ -429,6 +508,7 @@ h3 {
   display: flex;
   justify-content: center;
   background-color: #654F38;
+  margin-top: 50px;
 }
 .footer-content a {
   font-family: san-serif;
@@ -439,7 +519,7 @@ h3 {
   margin-right: 40px;
 }
 .footer-content a:hover {
-  color: #9C976A;
+  color: #654F3B;
 }
 .copyright {
   text-align: center;
@@ -449,9 +529,9 @@ h3 {
 @media (max-width: 500px) {
   .footer-content nav {
     background-color: transparent;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0 20px;
   }
   .footer-content nav a {
     color: black;
