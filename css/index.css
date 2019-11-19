@@ -156,7 +156,7 @@ h2 {
     background-color: #9C976A;
   }
 }
-.container .header nav {
+.header nav {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
@@ -164,7 +164,7 @@ h2 {
   padding: 15px 0 0;
 }
 @media (max-width: 500px) {
-  .container .header nav {
+  .header nav {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
@@ -172,11 +172,11 @@ h2 {
     padding: 0 60px 0;
     margin-left: 40px;
   }
-  .container .header nav a {
+  .header nav a {
     margin-bottom: 10px;
   }
 }
-.container a {
+a {
   font-family: san-serif;
   font-size: 1.5rem;
   text-decoration: none;
@@ -184,13 +184,8 @@ h2 {
   color: #EDDFB0;
   margin-right: 40px;
 }
-.container a:hover {
+a:hover {
   color: #000000;
-}
-@media (max-width: 500px) {
-  .container a:hover {
-    color: #000000;
-  }
 }
 .container {
   width: 100%;
@@ -440,7 +435,7 @@ h2 {
   font-size: 2rem;
 }
 .container .food-types a {
-  color: #594236;
+  color: #654F3B;
   font-size: 1rem;
 }
 .container .bottom-content a {
@@ -519,7 +514,7 @@ h2 {
   margin-right: 40px;
 }
 .footer-content a:hover {
-  color: #654F3B;
+  color: #000000;
 }
 .copyright {
   text-align: center;
@@ -534,10 +529,10 @@ h2 {
     flex-wrap: wrap;
   }
   .footer-content nav a {
-    color: black;
+    color: #000000;
   }
   .footer-content nav .copyright {
-    color: black;
+    color: #000000;
     margin-top: 30px;
     margin-right: 90px;
   }

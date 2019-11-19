@@ -2,15 +2,14 @@
 .footer-content h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #594236;
+  color: @brunt;
   margin-top: 18px;
   margin-left: 5px;
   font-family: 'Goudy Old Style', sans-serif;
 }
 .footer-content nav {
-    display:flex;
-    justify-content:center;
-    background-color:#654F38; 
+    .light-box(flex, center);
+    background-color:@brunt; 
     margin-top: 50px;
 }
 .footer-content a {
@@ -18,16 +17,16 @@
     font-size: 1rem; 
     text-decoration: none; 
     text-align: center;
-    color: #EDDFB0; 
+    color: @blush; 
     margin-right: 40px;
 }
 .footer-content a:hover {
-    color: #654F3B;
+    color: @shadow;
 }
 .copyright {
   text-align: center;
   margin-left: 100px;
-  color: #EDDFB0;
+  color:@blush ;
 }
 @media @mobile { 
     .footer-content nav{     
@@ -36,10 +35,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap; 
     a{
-      color:black;  
+      color:@shadow;  
     } 
     .copyright{
-        color:black;
+        color:@shadow;
          margin-top:30px;
          margin-right: 90px;
             

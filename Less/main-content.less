@@ -6,9 +6,8 @@
         padding: 0 40px;
     }
 .main-content {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 4px solid #594236;
+    .light-box(flex, space-evenly);
+    border-bottom: 4px solid @brunt;
     @media @mobile{
     flex-direction: column;
     justify-content: flex-start;
@@ -22,19 +21,17 @@
     margin-right: 60px;
   }
   .main-content .top-text h2 {
-    margin-top: 20px;
+    .right-space;
     margin: 20px;
-    margin-right: 20px;
     font-size: 1.25rem;
-    color: #4b719c;
+    color: @cobalt;
   }
   .main-content .top-text p {
-    display: flex;
-    justify-content: space-evenly;
+    .light-box(flex, space-evenly);
     margin: 0 20px;
     margin-right: 40px;
     margin-top: 20px;
-    color: #594236;
+    color: @brunt;
     font-weight: none;
     width: 400px;
     @media @mobile{
@@ -44,25 +41,23 @@
         }
   }
   .middle-content {
-    display: flex;
+    .light-box(flex, space-evenly);
     flex-direction: column;
     margin-top: 40px;
-    justify-content: space-evenly;
     border-bottom: 4px solid #594236;
     
   }
   .middle-text h2 {
-    margin-top: 20px;
-    margin-right: 20px;
+    .right-space;
     font-size: 1.25rem;
-    color: #4b719c;
+    color: @cobalt;
   }
   .middle-text p {
     margin-top: 20px;
     width: 800px;
     @media @mobile{
         width: 100%;
-       color: #594236; 
+       color: @brunt; 
     }
   }
   .middle-content .shared-recipes {
@@ -76,7 +71,7 @@
   }
   .shared-secrets h2 {
     font-size: 1.25rem;
-    color: #4b719c;
+    color: @cobalt;
     margin: 20px;
     font-weight: bold;
   }
@@ -110,15 +105,14 @@
     }
 } 
   .final-content {
-    display: flex;
+    .light-box(flex, space-between);
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 40px;
     @media @mobile{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 0 10px;
-    color: #594236;
+    color: @brunt;
          }
      } 
   
@@ -132,7 +126,7 @@
              }
          } 
   .personal{
-    border-top: 4px solid #594236; 
+    border-top: 4px solid @brunt; 
     margin-top: 20px;
   }
  
@@ -141,22 +135,21 @@
     font-weight: bold;
     margin: 10px;
     margin-top: 20px;
-    color: #4b719c;
+    color: @cobalt;
   }
   .about-page h1{
     margin-top: 10px;
     font-size: 2.5rem;
-    color: #4b719c;
+    color: @cobalt;
     padding: 10px 40px;
     text-align: center;
   }
   .about-page p {
     font-size: 1.25rem;
-    color: #594236;
+    color: @brunt;
   }
   .myteam {
-    display: flex;
-    justify-content: center; 
+    .light-box(flex, center); 
     flex-wrap: wrap;
     margin-top: 40px;  
   }
@@ -170,18 +163,18 @@
   }
   .pic p {
     padding: 40px 0;
-    color: #594236;
+    color: @brunt;
     font-weight: bold;
     width: 350px;
     margin-left: 60px;
   }
   .pic h3 {
     font-size: 2rem;
-    color: #4b719c;
+    color: @cobalt;
     text-align: center;
   }
   .pic p a{
-     color:#594236;
+     color:@brunt;
       } 
   
 
@@ -193,12 +186,12 @@
       text-align: center;
   }
   .top-foods h2{
-     color: #4b719c;
+     color: @cobalt;
      margin-top: 20px;
      font-size: 2rem;
   }
   .food-types a{
-      color:#594236;
+      color:@brunt;
       font-size: 1rem;  
   }
   .bottom-content a{
@@ -216,8 +209,7 @@
   
   .flip-card-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    .right-size;
     margin: 0 auto;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -230,23 +222,22 @@
   
   .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    .right-size;
     backface-visibility: hidden;
   }
   
   .flip-card-front {
     background-color: #97a1a5;
-    color: black;
+    color: @shadow;
   }
   
   .flip-card-back {
-    background-color: #654F3B;
-    color: #EDDFB0;
+    background-color: @Brunt;
+    color: @blush;
     transform: rotateY(180deg);
   }
   .flip-card-back h1, h3{
-    color:#EDDFB0;
+    color:@blush;
     font-weight: bold;
     padding: 0 20px;
   }

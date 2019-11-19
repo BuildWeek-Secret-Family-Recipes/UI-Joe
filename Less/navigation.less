@@ -4,13 +4,13 @@
     @media @mobile{
         width: 100%;
         padding: 0 40px;
-        background-color:#9C976A;
+        background-color:@lightpea;
     }
+}
 .header nav{
-    display:flex;
-    justify-content:space-around;
+    .light-box(flex, space-around);
     margin-bottom: 20px;
-    background-color:#654F3B;
+    background-color:@brunt;
     padding: 15px 0 0;
     @media @mobile { 
        flex-direction: column;
@@ -22,23 +22,18 @@
        a{
        margin-bottom: 10px; 
        }
-    }  
-}
-
+    }
+} 
 a{
   font-family: san-serif; 
   font-size: 1.5rem; 
   text-decoration: none; 
   text-align: center;
-  color: #EDDFB0; 
+  color: @blush; 
   margin-right: 40px;
 }
 a:hover {
-    color: #000000;
-    @media @mobile {
-       color: #000000;
-    }
-   }
+    color: @shadow;
 } 
          
      
