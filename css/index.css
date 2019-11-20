@@ -1,3 +1,16 @@
+.rounded-out {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+.right-space {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.right-size {
+  width: 100%;
+  height: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,31 +162,16 @@ h2 {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .container {
-    width: 100%;
-    padding: 0 40px;
-    background-color: #9C976A;
-  }
-}
 .header nav {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
   background-color: #654F3B;
-  padding: 15px 0 0;
+  padding: 1% 0;
 }
 @media (max-width: 500px) {
   .header nav {
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
     background-color: transparent;
-    padding: 0 60px 0;
-    margin-left: 40px;
-  }
-  .header nav a {
-    margin-bottom: 10px;
   }
 }
 a {
@@ -184,45 +182,47 @@ a {
   color: #EDDFB0;
   margin-right: 40px;
 }
+@media (max-width: 500px) {
+  a {
+    margin-bottom: 20px;
+  }
+}
 a:hover {
-  color: #000000;
+  color: #EDDFB0;
+}
+@media (max-width: 500px) {
+  a:hover a:hover {
+    color: #EDDFB0;
+  }
 }
 .container {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
-  }
-}
-.container button {
+button {
   border-radius: 10px;
   width: 100px;
   height: 30px;
   font-size: 1.2rem;
-  margin-left: 20px;
   margin-bottom: 10px;
   background-color: #654F3B;
   border: 2px solid #EDDFB0;
   color: #EDDFB0;
+  margin: 0 auto;
 }
-.container button:hover {
+button:hover {
   color: #EDDFB0;
   background-color: #9C976A;
 }
-.container .header h1 {
+.header h1 {
   text-align: center;
   font-size: 2rem;
-  color: black;
+  color: #000000;
   margin-bottom: 20px;
   margin-top: 10px;
 }
-@media (max-width: 500px) {
-  .cooking {
-    margin-left: 20px;
-  }
+.cooking {
+  margin-top: 20px;
 }
 .container {
   width: 800px;
@@ -230,219 +230,191 @@ a:hover {
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
-    padding: 0 40px;
+    background: #9C976A;
+    padding: 0 5%;
+    width: 98%;
+    margin: 0 auto;
   }
 }
-.container .main-content {
+.main-content {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 4px solid #594236;
+  border-bottom: 4px solid #654F3B;
 }
-@media (max-width: 500px) {
-  .container .main-content {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-  }
-}
-.container .main-content .cookbook {
-  padding: 60px 10px 20px;
+.main-content .cookbook {
+  margin-top: 60px;
   border: 0 10px solid #97a1a5;
-  margin-right: 60px;
+  margin-left: 50px;
 }
-.container .main-content .top-text h2 {
+.main-content .top-text h2 {
   margin-top: 20px;
-  margin: 20px;
   margin-right: 20px;
+  margin: 20px;
   font-size: 1.25rem;
   color: #4b719c;
 }
-.container .main-content .top-text p {
+.main-content .top-text p {
   display: flex;
-  justify-content: space-evenly;
-  margin: 0 20px;
-  margin-right: 40px;
+  justify-content: space-between;
+  margin-right: 20px;
   margin-top: 20px;
-  color: #594236;
+  color: #654F3B;
   font-weight: none;
   width: 400px;
 }
 @media (max-width: 500px) {
-  .container .main-content .top-text p {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  .main-content .top-text p {
+    padding: 0 5%;
   }
 }
-.container .middle-content {
+.middle-content {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   margin-top: 40px;
-  justify-content: space-evenly;
   border-bottom: 4px solid #594236;
 }
-.container .middle-text h2 {
+.middle-text h2 {
   margin-top: 20px;
   margin-right: 20px;
   font-size: 1.25rem;
   color: #4b719c;
 }
-.container .middle-text p {
+.middle-text p {
   margin-top: 20px;
-  width: 800px;
+  color: #654F3B;
 }
-@media (max-width: 500px) {
-  .container .middle-text p {
-    width: 100%;
-    color: #594236;
-  }
-}
-.container .middle-content .shared-recipes {
-  margin-right: 60px;
-}
-@media (max-width: 500px) {
-  .container .middle-content .shared-recipes {
-    width: 98%;
-    padding: 0 15px;
-    margin-right: 40px;
-    justify-content: center;
-  }
-}
-.container .shared-secrets h2 {
+.shared-secrets h2 {
   font-size: 1.25rem;
   color: #4b719c;
   margin: 20px;
   font-weight: bold;
 }
-.container .bottom-content {
+.bottom-content {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .container .bottom-content {
+  .bottom-content {
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-right: 80px;
+    justify-content: center;
   }
 }
-.container .bottom-content img {
+.bottom-content img {
   border-radius: 50px;
   font-size: 80%;
   padding-bottom: 0.5rem;
   margin: 0 25px;
 }
 @media (max-width: 500px) {
-  .container .bottom-content img {
-    margin-top: 20px;
+  .bottom-content img {
+    margin-top: 10px;
   }
 }
-.container .bottom-content p {
+.bottom-content p {
   margin: 5px 20px;
+  color: #654F3B;
 }
 @media (max-width: 500px) {
-  .container .bottom-content a {
-    text-align: center;
-    margin-left: 40px;
+  .bottom-content p a {
+    padding: 0 3%;
   }
 }
-.container .final-content {
+.final-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   margin-top: 40px;
 }
 @media (max-width: 500px) {
-  .container .final-content {
+  .final-content {
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 10px;
-    color: #594236;
+    justify-content: center;
   }
 }
-.container .last-text {
+.last-text {
   padding: 0 10px 0;
   width: 67.5rem;
   margin-bottom: 60px;
+  color: #654F3B;
 }
 @media (max-width: 500px) {
-  .container .last-text {
+  .last-text {
     width: 100%;
-    margin-bottom: -5px;
   }
 }
-.container .personal {
-  border-top: 4px solid #594236;
+.personal {
+  border-top: 4px solid #654F3B;
   margin-top: 20px;
 }
-.container .personal h2 {
+.personal h2 {
   font-size: 1.25rem;
   font-weight: bold;
   margin: 10px;
   margin-top: 20px;
   color: #4b719c;
 }
-.container .about-page h1 {
+.about-page h1 {
   margin-top: 10px;
   font-size: 2.5rem;
   color: #4b719c;
   padding: 10px 40px;
   text-align: center;
 }
-.container .about-page p {
+.about-page p {
   font-size: 1.25rem;
-  color: #594236;
+  color: #654F3B;
 }
-.container .myteam {
+.myteam {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.container .pic {
+.pic {
   margin-bottom: 40px;
   margin: 10px;
 }
-.container .pic img {
+.pic img {
   text-align: center;
   margin-left: 80px;
 }
-.container .pic p {
+.pic p {
   padding: 40px 0;
-  color: #594236;
+  color: #654F3B;
   font-weight: bold;
   width: 350px;
   margin-left: 60px;
 }
-.container .pic h3 {
+.pic h3 {
   font-size: 2rem;
   color: #4b719c;
   text-align: center;
 }
-.container .pic p a {
-  color: #594236;
+.pic p a {
+  color: #654F3B;
 }
-.container .shared-samples h1 {
+.shared-samples h1 {
   font-size: 2rem;
 }
-.container .top-foods {
+.top-foods {
   text-align: center;
 }
-.container .top-foods h2 {
+.top-foods h2 {
   color: #4b719c;
   margin-top: 20px;
   font-size: 2rem;
 }
-.container .food-types a {
+.food-types a {
   color: #654F3B;
   font-size: 1rem;
 }
-.container .bottom-content a {
+.bottom-content a {
   margin-bottom: 20px;
   text-align: center;
 }
-.container .flip-card {
+.flip-card {
   background-color: transparent;
   width: 400px;
   height: 400px;
@@ -450,7 +422,7 @@ a:hover {
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.container .flip-card-inner {
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -459,42 +431,49 @@ a:hover {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.container .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-.container .flip-card-front,
-.container .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-.container .flip-card-front {
+.flip-card-front {
   background-color: #97a1a5;
-  color: black;
+  color: #000000;
 }
-.container .flip-card-back {
+.flip-card-back {
   background-color: #654F3B;
   color: #EDDFB0;
   transform: rotateY(180deg);
 }
-.container .flip-card-back h1,
-.container h3 {
+.flip-card-back h1,
+h3 {
   color: #EDDFB0;
   font-weight: bold;
   padding: 0 20px;
 }
-.container .flip-card-back p {
+.flip-card-back p {
   font-size: 0.9rem;
   padding: 20px;
 }
-.container .flip-card-back h1 {
+.flip-card-back h1 {
   font-size: 1.5rem;
+}
+.postings {
+  color: #654F3B;
+  font-size: 1.25rem;
+}
+.postings h2 {
+  color: #4b719c;
 }
 .footer-content h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #594236;
+  color: #654F3B;
   margin-top: 18px;
   margin-left: 5px;
   font-family: 'Goudy Old Style', sans-serif;
@@ -502,8 +481,13 @@ a:hover {
 .footer-content nav {
   display: flex;
   justify-content: center;
-  background-color: #654F38;
+  background-color: #654F3B;
   margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .footer-content nav {
+    background-color: transparent;
+  }
 }
 .footer-content a {
   font-family: san-serif;
@@ -513,27 +497,24 @@ a:hover {
   color: #EDDFB0;
   margin-right: 40px;
 }
+@media (max-width: 500px) {
+  .footer-content a {
+    color: #000000;
+  }
+}
 .footer-content a:hover {
-  color: #000000;
+  color: #654F3B;
 }
 .copyright {
   text-align: center;
   margin-left: 100px;
   color: #EDDFB0;
 }
-@media (max-width: 500px) {
-  .footer-content nav {
-    background-color: transparent;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .footer-content nav a {
-    color: #000000;
-  }
-  .footer-content nav .copyright {
-    color: #000000;
-    margin-top: 30px;
-    margin-right: 90px;
-  }
+a {
+  color: #000000;
+}
+.copyright {
+  color: #000000;
+  margin-top: 30px;
+  margin-right: 90px;
 }

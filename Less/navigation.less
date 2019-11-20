@@ -1,29 +1,19 @@
+
 .container{
     width: 100%;
     margin: 0 auto;
-    @media @mobile{
-        width: 100%;
-        padding: 0 40px;
-        background-color:@lightpea;
-    }
+    
 }
 .header nav{
-    .light-box(flex, space-around);
-    margin-bottom: 20px;
+    .line-box(flex, space-around);
     background-color:@brunt;
-    padding: 15px 0 0;
-    @media @mobile { 
-       flex-direction: column;
-       justify-content: flex-start;
-       align-content: center;
-       background-color: transparent;
-       padding: 0 60px 0;
-       margin-left: 40px;
-       a{
-       margin-bottom: 10px; 
+    padding:1% 0;
+      
+       @media @mobile{
+      flex-direction: column;
+      background-color: transparent;   
        }
-    }
-} 
+}  
 a{
   font-family: san-serif; 
   font-size: 1.5rem; 
@@ -31,10 +21,15 @@ a{
   text-align: center;
   color: @blush; 
   margin-right: 40px;
+  @media @mobile{
+      margin-bottom: 20px;
+   }
 }
 a:hover {
-    color: @shadow;
-} 
-         
-     
- 
+    color: @blush;
+    @media @mobile{
+    a:hover { 
+        color:@blush;
+    }
+  } 
+ }           

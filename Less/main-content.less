@@ -2,23 +2,20 @@
     width: 800px;
     margin: 0 auto;
     @media @mobile{
-        width: 100%;
-        padding: 0 40px;
+        background: @lightpea;
+        padding: 0 5%;
+        width: 98%;
+        margin: 0 auto;
+    }
     }
 .main-content {
-    .light-box(flex, space-evenly);
-    border-bottom: 4px solid @brunt;
-    @media @mobile{
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    }
-   
+    .line-box(flex, space-evenly);
+    border-bottom: 4px solid @brunt; 
   }
   .main-content .cookbook {
-    padding: 60px 10px 20px;
+    margin-top: 60px;
     border: 0 10px solid #97a1a5;
-    margin-right: 60px;
+    margin-left: 50px;
   }
   .main-content .top-text h2 {
     .right-space;
@@ -27,21 +24,18 @@
     color: @cobalt;
   }
   .main-content .top-text p {
-    .light-box(flex, space-evenly);
-    margin: 0 20px;
-    margin-right: 40px;
+    .line-box(flex, space-between);
+    margin-right: 20px;
     margin-top: 20px;
     color: @brunt;
     font-weight: none;
     width: 400px;
     @media @mobile{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        }
+        padding: 0 5%;
+    }
   }
   .middle-content {
-    .light-box(flex, space-evenly);
+    .line-box(flex, space-evenly);
     flex-direction: column;
     margin-top: 40px;
     border-bottom: 4px solid #594236;
@@ -54,37 +48,24 @@
   }
   .middle-text p {
     margin-top: 20px;
-    width: 800px;
-    @media @mobile{
-        width: 100%;
-       color: @brunt; 
-    }
-  }
-  .middle-content .shared-recipes {
-    margin-right: 60px;
-    @media @mobile{
-        width: 98%;
-        padding: 0 15px;
-        margin-right: 40px;
-        justify-content: center;
-        }
+    color: @brunt;
   }
   .shared-secrets h2 {
     font-size: 1.25rem;
     color: @cobalt;
     margin: 20px;
     font-weight: bold;
-  }
+  }  
+  
   .bottom-content {
     display: flex;
     flex-direction: row;
     text-align: center;
     @media @mobile{
         flex-direction: column;
-        margin-bottom: 20px;
-        margin-right: 80px;
-             }
-         } 
+        justify-content: center; 
+         }
+     } 
   
   .bottom-content img {
     border-radius: 50px;
@@ -92,27 +73,25 @@
     padding-bottom: 0.5rem;
     margin: 0 25px;
     @media @mobile{
-        margin-top: 20px;
-        }
+        margin-top: 10px;   
+         }
   }
   .bottom-content p {
     margin: 5px 20px;
-  }
-  @media @mobile{
-    .bottom-content a{
-     text-align: center;
-     margin-left: 40px;
-    }
+    color: @brunt;
+    @media @mobile{
+     a{
+         padding: 0 3%;
+     }
+   }
 } 
   .final-content {
-    .light-box(flex, space-between);
+    .line-box(flex, space-between);
     flex-direction: row;
     margin-top: 40px;
     @media @mobile{
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 10px;
-    color: @brunt;
+        flex-direction: column;
+        justify-content: center;  
          }
      } 
   
@@ -120,10 +99,10 @@
     padding: 0 10px 0;
     width: 67.5rem;
     margin-bottom: 60px;
+    color: @brunt;
     @media @mobile{
-        width: 100%;
-        margin-bottom: -5px;
-             }
+        width: 100%; 
+         }
          } 
   .personal{
     border-top: 4px solid @brunt; 
@@ -149,7 +128,7 @@
     color: @brunt;
   }
   .myteam {
-    .light-box(flex, center); 
+    .line-box(flex, center); 
     flex-wrap: wrap;
     margin-top: 40px;  
   }
@@ -232,7 +211,7 @@
   }
   
   .flip-card-back {
-    background-color: @Brunt;
+    background-color: @brunt;
     color: @blush;
     transform: rotateY(180deg);
   }
@@ -246,7 +225,12 @@
       padding: 20px;
   }
   .flip-card-back h1{
-      font-size: 1.5rem;
-     }
+    font-size: 1.5rem;
+   } 
+   .postings{
+       color: @brunt;
+       font-size: 1.25rem;
    }
- 
+   .postings h2{
+    color: @cobalt;
+   }

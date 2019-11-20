@@ -8,10 +8,14 @@
   font-family: 'Goudy Old Style', sans-serif;
 }
 .footer-content nav {
-    .light-box(flex, center);
+    .line-box(flex, center);
     background-color:@brunt; 
     margin-top: 50px;
-}
+    @media @mobile{
+      background-color: transparent;   
+       }
+}  
+
 .footer-content a {
     font-family: san-serif; 
     font-size: 1rem; 
@@ -19,21 +23,18 @@
     text-align: center;
     color: @blush; 
     margin-right: 40px;
+    @media @mobile{
+     color: @shadow; 
+       }
 }
 .footer-content a:hover {
-    color: @shadow;
+    color: @brunt;
 }
 .copyright {
   text-align: center;
   margin-left: 100px;
-  color:@blush ;
-}
-@media @mobile { 
-    .footer-content nav{     
-    background-color:transparent; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
+  color:@blush;
+} 
     a{
       color:@shadow;  
     } 
@@ -43,6 +44,6 @@
          margin-right: 90px;
             
         }
-     }
-    }
+
+    
 
