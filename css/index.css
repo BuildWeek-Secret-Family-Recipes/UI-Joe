@@ -143,10 +143,10 @@ table {
   box-sizing: border-box;
 }
 .container {
-  width: 100%;
+  width: 800px;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .container {
     width: 100%;
     padding: 0 40px;
@@ -166,12 +166,17 @@ h2 {
   display: flex;
   justify-content: space-around;
   background-color: #654F3B;
-  padding: 1% 0;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .header nav {
     flex-direction: column;
     background-color: transparent;
+  }
+}
+@media (min-width: 800px) {
+  .header nav {
+    flex-direction: row;
+    background-color: #654F3B;
   }
 }
 a {
@@ -181,8 +186,9 @@ a {
   text-align: center;
   color: #EDDFB0;
   margin-right: 40px;
+  margin-top: 15px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   a {
     margin-bottom: 20px;
   }
@@ -190,7 +196,7 @@ a {
 a:hover {
   color: #EDDFB0;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   a:hover a:hover {
     color: #EDDFB0;
   }
@@ -228,7 +234,7 @@ button:hover {
   width: 800px;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .container {
     background: #9C976A;
     padding: 0 5%;
@@ -236,40 +242,46 @@ button:hover {
     margin: 0 auto;
   }
 }
-.main-content {
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: 4px solid #654F3B;
+@media (min-width: 800px) {
+  .container {
+    background: #EDDFB0;
+    padding: 0 8%;
+    width: 98%;
+    margin: 0 auto;
+  }
 }
-.main-content .cookbook {
-  margin-top: 60px;
-  border: 0 10px solid #97a1a5;
-  margin-left: 50px;
+.main-content {
+  border-bottom: 4px solid #654F3B;
+  margin-bottom: 20px;
 }
 .main-content .top-text h2 {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin: 20px;
+  margin-right: 60px;
   font-size: 1.25rem;
   color: #4b719c;
 }
-.main-content .top-text p {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-  margin-top: 20px;
-  color: #654F3B;
-  font-weight: none;
-  width: 400px;
-}
-@media (max-width: 500px) {
-  .main-content .top-text p {
-    padding: 0 5%;
+@media (min-width: 500px) {
+  .main-content .top-text h2 {
+    padding: 0 3%;
   }
 }
-.middle-content {
+.main-content .top-text {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #654F3B;
+  font-weight: none;
+}
+@media (min-width: 500px) {
+  .main-content .top-text {
+    flex-direction: column;
+    padding: 0 8%;
+  }
+}
+.main-content .top-text .top-text img {
+  margin-bottom: 20px;
+}
+.middle-content {
   flex-direction: column;
   margin-top: 40px;
   border-bottom: 4px solid #594236;
@@ -279,15 +291,18 @@ button:hover {
   margin-right: 20px;
   font-size: 1.25rem;
   color: #4b719c;
+  margin-left: 40px;
 }
 .middle-text p {
   margin-top: 20px;
   color: #654F3B;
+  padding: 0 40px;
 }
 .shared-secrets h2 {
   font-size: 1.25rem;
   color: #4b719c;
   margin: 20px;
+  margin-left: 40px;
   font-weight: bold;
 }
 .bottom-content {
@@ -295,9 +310,15 @@ button:hover {
   flex-direction: row;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .bottom-content {
     flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  .bottom-content {
+    flex-direction: row;
     justify-content: center;
   }
 }
@@ -307,7 +328,7 @@ button:hover {
   padding-bottom: 0.5rem;
   margin: 0 25px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .bottom-content img {
     margin-top: 10px;
   }
@@ -316,7 +337,7 @@ button:hover {
   margin: 5px 20px;
   color: #654F3B;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .bottom-content p a {
     padding: 0 3%;
   }
@@ -324,24 +345,35 @@ button:hover {
 .final-content {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   margin-top: 40px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .final-content {
     flex-direction: column;
     justify-content: center;
   }
 }
+@media (min-width: 800px) {
+  .final-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .last-text {
-  padding: 0 10px 0;
+  padding: 0 25px 0;
   width: 67.5rem;
   margin-bottom: 60px;
   color: #654F3B;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .last-text {
     width: 100%;
+  }
+}
+@media (min-width: 500px) and (min-width: 800px) {
+  .last-text {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 .personal {
@@ -351,7 +383,7 @@ button:hover {
 .personal h2 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin: 10px;
+  margin: 25px;
   margin-top: 20px;
   color: #4b719c;
 }
@@ -361,31 +393,42 @@ button:hover {
   color: #4b719c;
   padding: 10px 40px;
   text-align: center;
+  margin-top: 40px;
 }
 .about-page p {
   font-size: 1.25rem;
   color: #654F3B;
+  margin-top: 20px;
 }
 .myteam {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .pic {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   margin: 10px;
 }
 .pic img {
   text-align: center;
   margin-left: 80px;
+  margin: 0 auto;
 }
 .pic p {
-  padding: 40px 0;
   color: #654F3B;
   font-weight: bold;
-  width: 350px;
-  margin-left: 60px;
+  padding: 40px 15%;
+  margin-left: 120px;
+  width: 98%;
+}
+@media (min-width: 500px) {
+  .pic p {
+    margin: 0 auto;
+  }
 }
 .pic h3 {
   font-size: 2rem;
@@ -394,6 +437,9 @@ button:hover {
 }
 .pic p a {
   color: #654F3B;
+}
+.pic a:hover {
+  color: #C4C4C4;
 }
 .shared-samples h1 {
   font-size: 2rem;
@@ -476,7 +522,7 @@ h3 {
   color: #654F3B;
   margin-top: 18px;
   margin-left: 5px;
-  font-family: 'Goudy Old Style', sans-serif;
+  font-family: "Goudy Old Style", sans-serif;
 }
 .footer-content nav {
   display: flex;
@@ -484,7 +530,7 @@ h3 {
   background-color: #654F3B;
   margin-top: 50px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .footer-content nav {
     background-color: transparent;
   }
@@ -497,7 +543,7 @@ h3 {
   color: #EDDFB0;
   margin-right: 40px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .footer-content a {
     color: #000000;
   }
