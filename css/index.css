@@ -506,12 +506,24 @@ h3 {
   font-size: 0.9rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .flip-card-back p {
+    font-size: 0.8rem;
+    margin-right: 20px;
+  }
+}
 .flip-card-back h1 {
   font-size: 1.5rem;
 }
 .postings {
   color: #654F3B;
   font-size: 1.25rem;
+}
+@media (max-width: 500px) {
+  .postings {
+    font-size: 1.6rem;
+    margin-right: 20px;
+  }
 }
 .postings h2 {
   color: #4b719c;
