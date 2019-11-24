@@ -10,38 +10,38 @@
     @media @tablet{
         background: @blush;
         padding: 0 8%;
-        width: 98%;
+        width: 100%;
         margin: 0 auto;
       }    
-     }
+      .cooking{margin-bottom: 20px;
+      } 
      .main-content{
-         border-bottom: 4px solid @brunt;
-         margin-bottom: 20px;
-     }
-  .main-content .top-text h2 {
-    margin-right: 60px;
+       .line-box(flex, space-around);
+       border-bottom: 4px solid #594236;
+       border-top: 4px solid #594236;
+       @media @mobile{
+         flex-direction: column;
+       }
+      } 
+      .main-content h2{
     font-size: 1.25rem;
     color: @cobalt;
-    @media @mobile{
-        padding: 0 3%;
-    }
-  }
-  .main-content .top-text{
-    .line-box(flex, space-between); 
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: @brunt;
-    font-weight: none;
     
-    @media @mobile{
-        flex-direction: column;
-        padding: 0 8%;
-    }
-    .top-text img{
+      }
+      .main-content p{
+        width: 90%;
+        margin-bottom: 40px;
+      }
+      .top-text img{
+        margin-top: 60px;
+        width: 450px;
+        height: 400px;
+        padding: 0;
         margin-bottom: 20px;
-        
-    }
-}  
+        @media @mobile{
+          width: 100%;
+        }
+      }
 
   .middle-content {
     flex-direction: column;
@@ -53,12 +53,12 @@
     .right-space;
     font-size: 1.25rem;
     color: @cobalt;
-    margin-left: 40px;
+    
   }
   .middle-text p {
     margin-top: 20px;
     color: @brunt;
-    padding: 0 40px;
+    
   }
   .shared-secrets h2 {
     font-size: 1.25rem;
@@ -122,7 +122,8 @@
         width: 100%;
         @media @tablet{
             flex-direction: row;
-            justify-content: center; 
+            justify-content: center;
+            width: 100% 
              }
      }
  } 
@@ -154,7 +155,8 @@
   .myteam {
     .line-box(flex, center);
     flex-wrap: wrap;
-    margin-top: 60px;   
+    margin-top: 60px;  
+    margin: 0 auto; 
   }
   .pic{
     .line-box(flex, center); 
@@ -195,6 +197,9 @@
   }
   .top-foods{
       text-align: center;
+    @media @mobile{
+      margin-right: 40px;
+    }
   }
   .top-foods h2{
      color: @cobalt;
@@ -216,6 +221,12 @@
     perspective: 1000px;
     margin: 0 auto;
     margin-bottom: 40px;
+    @media @mobile{
+      width: 100%;
+      margin-left:25px;
+      perspective: 100%
+      
+    }
   }
   
   .flip-card-inner {
@@ -235,17 +246,27 @@
     position: absolute;
     .right-size;
     backface-visibility: hidden;
+    @media @mobile{
+      width: 100%;
+     
+    }
   }
   
   .flip-card-front {
     background-color: #97a1a5;
     color: @shadow;
+    @media @mobile{
+      width: 100%;
+    }
   }
   
   .flip-card-back {
     background-color: @brunt;
     color: @blush;
     transform: rotateY(180deg);
+    @media @mobile{
+      width: 100%;
+    }
   }
   .flip-card-back h1, h3{
     color:@blush;
@@ -257,7 +278,6 @@
       padding: 20px;
       @media @mobile{
         font-size: .80rem;
-        margin-right: 20px;
      }
   }
   .flip-card-back h1{
@@ -268,9 +288,9 @@
        font-size: 1.25rem;
        @media @mobile{
         font-size:1.6rem;
-        margin-right: 20px;
      }
    }
    .postings h2{
     color: @cobalt;
    }
+  }

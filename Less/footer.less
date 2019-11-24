@@ -7,7 +7,7 @@
   font-family: "Goudy Old Style", sans-serif;
 }
 .footer-content nav {
-  .line-box(flex, center);
+  .line-box(flex, space-around);
   background-color: @brunt;
   margin-top: 50px;
   @media @mobile {
@@ -20,14 +20,15 @@
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
-  color: @blush;
+  color: @shadow;
   margin-right: 40px;
   @media @mobile {
     color: @shadow;
+   display: none; 
   }
 }
 .footer-content a:hover {
-  color: @brunt;
+  color: @blush;
 }
 .copyright {
   text-align: center;
@@ -39,6 +40,6 @@ a {
 }
 .copyright {
   color: @shadow;
-  margin-top: 30px;
+  margin-top: 18px;
   margin-right: 90px;
 }
