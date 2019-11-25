@@ -258,6 +258,13 @@ button:hover {
 @media (max-width: 500px) {
   .container .main-content {
     flex-direction: column;
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .container .main-content {
+    flex-direction: column;
+    width: 100%;
   }
 }
 .container .main-content h2 {
@@ -277,6 +284,11 @@ button:hover {
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
+  .container .top-text img {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
   .container .top-text img {
     width: 100%;
   }
