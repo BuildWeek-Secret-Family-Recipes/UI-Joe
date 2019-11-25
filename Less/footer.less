@@ -1,0 +1,45 @@
+.footer-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: @brunt;
+  margin-top: 18px;
+  margin-left: 5px;
+  font-family: "Goudy Old Style", sans-serif;
+}
+.footer-content nav {
+  .line-box(flex, space-around);
+  background-color: @brunt;
+  margin-top: 50px;
+  @media @mobile {
+    background-color: transparent;
+  }
+}
+
+.footer-content a {
+  font-family: san-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: @shadow;
+  margin-right: 40px;
+  @media @mobile {
+    color: @shadow;
+   display: none; 
+  }
+}
+.footer-content a:hover {
+  color: @blush;
+}
+.copyright {
+  text-align: center;
+  margin-left: 100px;
+  color: @blush;
+}
+a {
+  color: @shadow;
+}
+.copyright {
+  color: @shadow;
+  margin-top: 18px;
+  margin-right: 90px;
+}
