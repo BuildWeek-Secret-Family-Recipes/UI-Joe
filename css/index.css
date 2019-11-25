@@ -369,7 +369,7 @@ button:hover {
 }
 @media (max-width: 500px) and (min-width: 800px) {
   .container .last-text {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
   }
